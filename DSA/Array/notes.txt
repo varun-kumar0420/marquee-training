@@ -1,0 +1,6 @@
+what is array?
+             Array is a collection of similar data types.
+why do we need array?
+        to manage large data efficiently . Easy traversal.
+
+why array uses zero based indexing?
