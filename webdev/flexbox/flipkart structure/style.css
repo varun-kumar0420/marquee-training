@@ -32,7 +32,7 @@ nav {
   gap: 10px;
 }
 
-#top-nav {
+.top-nav {
   display: flex;
   justify-content: space-between;
   margin: 0px 10px;
@@ -41,8 +41,8 @@ nav {
 
 .top-nav-left {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  <!-- align-items: center; -->
+  justify-content:space-between; 
   gap: 10px;
 }
 
