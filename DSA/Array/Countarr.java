@@ -9,6 +9,9 @@ public class Countarr {
     for (int i = 0; i < arr.length; i++) {
       arr[i] = sum - arr[i];
     }
+    for (int i : arr) {
+      System.out.print(i + " ");
+    }
   }
 
   public static void main(String[] args) {
