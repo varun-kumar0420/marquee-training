@@ -1,0 +1,5 @@
+Time complexity: it is a amount of time an algorithm takes to complete as a function of it input size.
+Asymptotic Notation: 
+   1. Big-O :- worst case-> O(n), O(n^2).
+   2. Omega :- Best case
+   3. Theta Notation :- avg case
