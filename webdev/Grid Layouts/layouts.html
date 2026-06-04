@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DOCUMENT</title>
+  </head>
+  <style>
+    .grid-container{
+      display: grid;
+      grid-template-columns: 1fr 1.5fr 1.5fr;
+      grid-template-rows: auto 200px 200px auto;
+      gap: 15px;
+      padding: 20px;
+      background-color: white;
+      font-family: sans-serif;
+    }
+    .item{
+      display: flex;
+      align-items: center;
+      justify-content: centre;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      padding: 20px;
+    }
+    .header, .footer{
+      background-color: #ffae25;
+    }
+    .sidebar{
+      background-color: #ff6600;
+    }
+    .content-1{
+      background-color: #d60000;
+    }
+    .content-2,.content-3{
+      background-color: #d600df;
+    }
+    .header{
+      grid-row: 1/2;
+      grid-column: 1/4;
+    }
+    .sidebar{
+      grid-row: 2 / 4;
+      grid-column: 1 / 2;
+    }
+    .content-1{
+      grid-row: 2/3;
+      grid-column: 2/4;
+    }
+    .content-2{
+      grid-row: 3/4;
+      grid-column: 2/3;
+    }
+    .content-3{
+      grid-row: 3/4;
+      grid-column: 3/4;
+    }
+    .footer{
+      grid-row: 4/5;
+      grid-column: 1/4;
+    }
+  </style>
+  <body>
+    <div class="grid-container">
+      <header class="item header">HEADER</header>
+      <aside class="item sidebar">SIDEBAR</aside>
+      <main class="item content-1">CONTENT 1</main>
+      <section class="item content-2">CONTENT 2</section>
+      <section class="item content-3">CONTENT 3</section>
+      <footer class="item footer">FOOTER</footer>
+    </div>
+  </body>
+</html>
