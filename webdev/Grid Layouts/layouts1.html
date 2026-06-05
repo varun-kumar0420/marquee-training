@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      width: 900px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 150px;
+      gap: 15px;
+    }
+
+    .item {
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+    .item1 {
+      background: #cfc2f5;
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+
+    .item2 {
+      background: pink;
+      grid-column: 2/5;
+      grid-row: 1/2;
+    }
+
+    .item3 {
+      background: lightgreen;
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    .item4 {
+      background: khaki;
+      grid-column: 3/5;
+      grid-row: 2/3;
+    }
+
+    .item5 {
+      background: peachpuff;
+      grid-column: 1/4;
+      grid-row: 3/4;
+    }
+
+    .item6 {
+      background: lightblue;
+      grid-column: 4/5;
+      grid-row: 3/4;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item item1">Customization</div>
+
+      <div class="item item2">Scheduling</div>
+
+      <div class="item item3">Wallet</div>
+
+      <div class="item item4">Inbox</div>
+
+      <div class="item item5">Send Gifts</div>
+
+      <div class="item item6">Reminders</div>
+    </div>
+  </body>
+</html>
