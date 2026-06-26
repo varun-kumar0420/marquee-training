@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TRAFFIC LIGHTS</title>
+    <style>
+      .traffic-light{
+        background-color: black;
+        padding: 10px;
+        border-radius: 15px;
+        width: 80px;
+      }
+      #red_box,
+      #yellow_box,
+      #green_box{
+        height: 60px;
+        width: 60px;
+        border-radius: 60px;
+        margin: 10px auto;
+      }
+      #red_box {
+  animation: red-light 3s infinite;
+}
+
+#yellow_box {
+  animation: yellow-light 3s infinite;
+}
+
+#green_box{
+  animation: green-light 3s infinite;
+}
+
+@keyframes red-light {
+  0%, 33% { background-color: rgb(253, 5, 5); box-shadow: 0 0 20px red; }
+  34%, 100% { background-color: rgb(130, 26, 26); box-shadow: none; }
+}
+
+@keyframes yellow-light {
+  34%, 66% { background-color: rgb(249, 249, 9); box-shadow: 0 0 20px yellow; }
+  0%, 33%, 67%, 100% { background-color: rgb(121, 121, 19); box-shadow: none; }
+}
+
+@keyframes green-light {
+  67%, 100% { background-color: rgb(26, 254, 26); box-shadow: 0 0 20px green; }
+  0%, 66% { background-color: green; box-shadow: none; }
+}
+    </style>
+  </head>
+  <body>
+    <div class="traffic-light">
+     <div id="red_box"></div>
+     <div id="yellow_box"></div>
+     <div id="green_box"></div>
+    </div>
+  </body>
+</html>

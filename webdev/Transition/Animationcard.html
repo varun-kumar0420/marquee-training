@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Animation</title>
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: gilroy, sans-serif;
+      }
+      body {
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: #fff;
+      }
+      .title{
+        text-align: center;
+        font-size: 48px;
+        font-weight: 500;
+        margin-bottom: 25px;
+      }
+      .container{
+        height: 580px;
+        width: 700px;
+        background: linear-gradient(135deg,#8d38db,#b16cff);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .blink-dot{
+        position: absolute;
+        top: 40px;
+        right: 120px;
+        width: 42px;
+        height: 42px;
+        border-radius: 50px;
+        animation: blink 1s infinite alternate;
+        box-shadow: 0 0 0 rgba(0, 255, 0, .6);
+      }
+      @keyframes blink{
+    from{
+        background:#0d6b1f;          
+        box-shadow:0 0 8px #0d6b1f;
+    }
+    to{
+        background:#64ff7a;          
+        box-shadow:0 0 25px #64ff7a;
+    }
+}
+.card{
+  width: 360px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .15);
+}
+.profile-img{
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin: -10px auto 25px;
+  display: block;
+}
+h2{
+  color: #444;
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+.role{
+  color: #999;
+  margin-bottom: 30px;
+}
+.stats{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+}
+ .stats h3{
+  color: #444;
+  font-size: 22px;
+ }
+ .stats span{
+  display: block;
+  color: #bbb;
+  font-size: 14px;
+  margin-top: 4px;
+ }
+ .buttons{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+ }
+ button{
+  border: none;
+  padding: 14px 36px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+ }
+ .follow{
+  background-color: #7a12d4;
+ }
+ .message{
+  background-color: #b9b9b9;
+ }
+  </style>
+  </head>
+  <body>
+   <h1 class="title">
+    Create Blinking animation effect<br>
+    from dark green to light green
+</h1>
+<div class="container">
+    <div class="blink-dot"></div>
+    <div class="card">
+        <img
+            class="profile-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD4yf3VPlPcIXyQubi8K921gdjtSSitJryz_zLdftcvw&s=10"
+            alt="profile">
+        <h2>Sophia Carter</h2>
+        <p class="role">Web Developer</p>
+        <div class="stats">
+            <div>
+                <h3>100</h3>
+                <span>Posts</span>
+            </div>
+            <div>
+                <h3>940k</h3>
+                <span>Followers</span>
+            </div>
+            <div>
+                <h3>185</h3>
+                <span>Following</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="follow">Follow</button>
+            <button class="message">Message</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
