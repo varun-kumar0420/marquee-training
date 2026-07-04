@@ -2,9 +2,12 @@ debugger;
 console.log("Global Execution Context starts");
 var globalVariable = "I am a global variable";
 console.log(globalVariable);
-console.log(globalFunction);
+console.log(greet());
+greet();
+
 console.log("Global Execution Context ends");
-var globalFunction = function () {
+function greet() {
+  var name = 'sunny';
   console.log("Inside global function");
+  return 100;
 };
-globalFunction();
